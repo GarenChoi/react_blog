@@ -1,0 +1,8 @@
+#blog {
+    margin-top: 15vh;
+}
+.blog__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
