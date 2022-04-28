@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header id="header">
             <h1 className="logo">
-                <a href="#">
+                <a href="/">
                     REACT <em>blog</em>
                 </a>
             </h1>
@@ -13,10 +13,10 @@ export default function Header() {
                 <h2 className="ir_so">메인 메뉴</h2>
                 <ul>
                     <li>
-                        <a href="../login/join.php">HOME</a>
+                        <a href="/">HOME</a>
                     </li>
                     <li>
-                        <a href="../comment/comment.php">ABOUT</a>
+                        <a href="/login">LOGIN</a>
                     </li>
                     <li>
                         <a href="../board/board.php">CONTACT</a>
@@ -32,10 +32,10 @@ export default function Header() {
             <div className="member">
                 <span className="ir_so">회원정보 영역</span>
 
-                <a href="#" className="setting">
-                    <img src="./img01.jpeg" width="60" height="60" viewBox="0 0 60 60" />
+                <a href="/" className="setting">
+                    <img src="./img01.jpeg" alt="이미지" />
                 </a>
-                <a href="../login/login.php">...님 환영합니다.</a>
+                <a href="/">...님 환영합니다.</a>
             </div>
         </header>
     );

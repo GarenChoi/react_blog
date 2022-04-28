@@ -5,8 +5,8 @@ export default function Post() {
     return (
         <article className="blog">
             <figure className="blog__header" aria-hidden="true">
-                <a href="#">
-                    <img src="./img02.jpeg" alt="" />
+                <a href="/postView">
+                    <img src="https://source.unsplash.com/800x600/?nature,water" alt="이미지" />
                 </a>
             </figure>
             <div className="blog__body">
@@ -15,7 +15,7 @@ export default function Post() {
                 <div className="blog__desc">내용입니다.</div>
                 <div className="blog__info">
                     <span className="author">
-                        <a href="#">GarenChoi</a>
+                        <a href="/">GarenChoi</a>
                     </span>
                     <span className="date">2022/04/27</span>
                 </div>
