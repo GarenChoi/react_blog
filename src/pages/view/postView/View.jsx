@@ -12,7 +12,7 @@ export default function View() {
                     <span className="author">
                         <Link to="/">GraenChoi</Link>
                     </span>
-                    <span className="date">2022/04/28 15:23</span>
+                    <span className="date">2022/04/27 15:23</span>
                     <br />
 
                     <span className="modify">
