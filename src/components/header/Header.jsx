@@ -1,41 +1,42 @@
 import React from "react";
 import "./header.css";
+import { Link } from "react-router-dom";
 
 export default function Header() {
     return (
         <header id="header">
             <h1 className="logo">
-                <a href="/">
+                <Link to="/">
                     REACT <em>blog</em>
-                </a>
+                </Link>
             </h1>
             <nav className="menu">
                 <h2 className="ir_so">메인 메뉴</h2>
                 <ul>
                     <li>
-                        <a href="/">HOME</a>
+                        <Link to="/">HOME</Link>
                     </li>
                     <li>
-                        <a href="/login">LOGIN</a>
+                        <Link to="/login">LOGIN</Link>
                     </li>
                     <li>
-                        <a href="../board/board.php">CONTACT</a>
+                        <Link to="../board/board.php">CONTACT</Link>
                     </li>
                     <li>
-                        <a href="../blog/blog.php">WRITE</a>
+                        <Link to="../blog/blog.php">WRITE</Link>
                     </li>
                     <li>
-                        <a href="../quiz/quiz.php">LOGOUT</a>
+                        <Link to="../quiz/quiz.php">LOGOUT</Link>
                     </li>
                 </ul>
             </nav>
             <div className="member">
                 <span className="ir_so">회원정보 영역</span>
 
-                <a href="/" className="setting">
+                <Link to="/" className="setting">
                     <img src="./img01.jpeg" alt="이미지" />
-                </a>
-                <a href="/">...님 환영합니다.</a>
+                </Link>
+                <Link to="/">...님 환영합니다.</Link>
             </div>
         </header>
     );
