@@ -4,28 +4,26 @@ import { Link } from "react-router-dom";
 
 export default function View() {
     return (
-        <main id="contents">
+        <main id="contents" className="gray">
             <h2 className="ir_so">블로그 영역</h2>
-            <section id="board-type" className="center mb100">
-                <div className="blog__label">
-                    <h3 className="section__title">타이틀</h3>
-                    <span className="author">
-                        <Link to="/">GraenChoi</Link>
-                    </span>
-                    <span className="date">2022/04/27 15:23</span>
-                    <br />
-
-                    <span className="modify">
-                        <Link to="/">수정</Link>
-                    </span>
-                    <span className="delete">
-                        <Link to="/">삭제</Link>
-                    </span>
-                </div>
+            <section id="board-type" className="center pb100 pt100">
                 <div className="container">
                     <div className="blog__layout">
                         <div className="blog__left">
+                            <div className="blog__label">
+                                <img src="https://source.unsplash.com/800x600/?nature,water" alt="이미지" />
+                            </div>
                             <h4>타이틀</h4>
+                            <div className="blog__left__info">
+                                <span className="info">
+                                    <Link to="/">GraenChoi</Link>
+                                    <span>2022/04/27</span>
+                                </span>
+                                <span className="infoBtn">
+                                    <Link to="/">수정</Link>
+                                    <Link to="/">삭제</Link>
+                                </span>
+                            </div>
                             <div>
                                 컨텐츠 내용입니다.컨텐츠 내용입니다.컨텐츠 내용입니다.컨텐츠 내용입니다.컨텐츠
                                 내용입니다.컨텐츠 내용입니다.컨텐츠 내용입니다.컨텐츠 내용입니다.컨텐츠 내용입니다.
@@ -38,9 +36,9 @@ export default function View() {
                                     title="쿠팡ad"
                                     width="300"
                                     height="300"
-                                    frameborder="0"
+                                    frameBorder="0"
                                     scrolling="no"
-                                    referrerpolicy="unsafe-url"
+                                    referrerPolicy="unsafe-url"
                                 ></iframe>
                             </div>
                             <Link to="/">목록으로</Link>

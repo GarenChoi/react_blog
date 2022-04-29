@@ -6,7 +6,7 @@ export default function Post() {
     return (
         <article className="blog">
             <figure className="blog__header" aria-hidden="true">
-                <Link to="/postView">
+                <Link to="/">
                     <img src="https://source.unsplash.com/800x600/?nature,water" alt="이미지" />
                 </Link>
             </figure>

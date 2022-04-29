@@ -20,23 +20,23 @@ export default function Header() {
                         <Link to="/login">LOGIN</Link>
                     </li>
                     <li>
-                        <Link to="../board/board.php">CONTACT</Link>
+                        <Link to="/join">JOIN</Link>
                     </li>
                     <li>
-                        <Link to="../blog/blog.php">WRITE</Link>
+                        <Link to="/Post">POST</Link>
                     </li>
                     <li>
-                        <Link to="../quiz/quiz.php">LOGOUT</Link>
+                        <Link to="/write">WRITE</Link>
                     </li>
                 </ul>
             </nav>
             <div className="member">
                 <span className="ir_so">회원정보 영역</span>
 
-                <Link to="/" className="setting">
+                <Link to="/mypage" className="setting">
                     <img src="./img01.jpeg" alt="이미지" />
                 </Link>
-                <Link to="/">...님 환영합니다.</Link>
+                <Link to="/mypage">...님 환영합니다.</Link>
             </div>
         </header>
     );
